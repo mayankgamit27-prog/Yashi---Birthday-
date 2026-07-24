@@ -17,3 +17,16 @@ setInterval(() => {
         heart.remove();
     }, 5000);
 }, 400);
+const photos = document.querySelectorAll(".gallery img");
+
+let current = 0;
+
+setInterval(() => {
+
+    photos.forEach((img, index) => {
+        img.style.display = index === current ? "block" : "none";
+    });
+
+    current = (current + 1) % photos.length;
+
+}, 2500);
