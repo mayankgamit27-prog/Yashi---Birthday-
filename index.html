@@ -82,7 +82,19 @@ animation:up 6s linear infinite;
 <button onclick="show()">Open My Surprise</button>
 
 <div id="gallery">
+#gallery{
+display:flex;
+overflow-x:auto;
+gap:15px;
+padding:20px;
+scroll-behavior:smooth;
+}
 
+#gallery img{
+min-width:250px;
+height:330px;
+border-radius:20px;
+}
 <br><br>
 
 <img src="IMG-20250506-WA0006.jpg">
